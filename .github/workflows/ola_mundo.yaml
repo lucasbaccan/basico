@@ -1,5 +1,13 @@
 name: "Hello World"
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
 description: "Greet someone and record the time"
+
 inputs:
   who-to-greet: # id of input
     description: "Who to greet"
